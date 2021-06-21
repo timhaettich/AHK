@@ -4,6 +4,6 @@ SendMode Input  ; Recommended for new scripts due to its superior speed and reli
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 ; When run, insert the current datestamp
-FormatTime, CurrentDateTime,, yyMMdd
+FormatTime, CurrentDateTime,, yyMMddhhmm
 SendInput %CurrentDateTime%_
 return
